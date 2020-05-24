@@ -1,3 +1,4 @@
+.gitignore
 .DS_Store
 node_modules
 /dist
@@ -5,6 +6,7 @@ node_modules
 # local env files
 .env.local
 .env.*.local
+.env
 
 # Log files
 npm-debug.log*
