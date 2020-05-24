@@ -28,6 +28,7 @@
       >
         <span >Members</span>
       </v-btn>
+      <v-btn @click="logout" v-if="this.$store.state.userIdAuthorized">Logout</v-btn>
     </v-app-bar>
 
     <v-content>
@@ -48,8 +49,13 @@ export default {
   },
 
   data: () => ({
-    clientId: process.env.test
+    clientId: process.env.VUE_APP_AUTH0_CONFIG_CLIENTID
   }),
+  methods: {
+    logout() {
+
+    }
+  },
   beforeCreate(){
 
   }
