@@ -1,4 +1,8 @@
+import Vue from 'vue'
+import Vuex from "vuex"
 import auth0 from 'auth0-js';
+
+Vue.use(Vuex)
 
 const webAuth = new auth0.WebAuth({
   domain: 'dev-nmyj8jo8.auth0.com',

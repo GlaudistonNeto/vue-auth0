@@ -5,6 +5,7 @@
       <router-link to="/about">About</router-link> |
       <router-link to="/secret">Secret</router-link>
     </div>
+    {{ clientId }}
     <router-view/>
   </div>
 </template>
